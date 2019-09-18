@@ -7,10 +7,8 @@ function myName(name) {
 
 function setTeachersNames(teachersName) {
   // change code below this line so that we can set the variable.
-
-  //const teachers = null;
-  //teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
-  const teachers = teachersName;
+  const teachers = null;
+  teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
 
   return teachers;
 }
@@ -19,27 +17,22 @@ function setTeachersNames(teachersName) {
 function add(a, b) {
   let sum;
 
-  sum = a+b;
-  
   return sum;
 }
 
 /*** Using the increment operator, add a year to the argument and make me older */
 function ageMeByAYear(age) {
-  age++;
   return age;
 }
 //STOP HERE
 /*** Using the decrement operator make me age decrement by a year  ***/
 function makeMeYoungerByAYear(age) {
-  age--;
   return age;
 }
 
 /** Take the argument that will be a string and return an integer  */
 function convertStringToInt(str) {
   let int;
-  int = parseInt(str, 10);
   return int;
 }
 
@@ -54,9 +47,6 @@ function convertStringToInt(str) {
  */
 function getTheCharacterPosition(name, letter) {
   let characterPosition;
-
-  characterPosition = name.indexOf(letter);
-  
   return characterPosition;
 }
 
@@ -64,8 +54,6 @@ function getTheCharacterPosition(name, letter) {
 
 function stringLength(str) {
   let strLength;
-
-  strLength = str.length;
 
   return strLength;
 }
@@ -79,8 +67,6 @@ function stringLength(str) {
 
 function getLastCharacter(str) {
   let lastCharacter;
-
-  lastCharacter = str.charAt((stringLength(str))-1);
 
   return lastCharacter;
 }
@@ -100,13 +86,6 @@ function getLastCharacter(str) {
 function getLastWordInPlaceName(place) {
   let newPlace;
 
-  let words;
-  let lastWordPos;
-
-  words = place.split(" ");
-  lastWordPos = (words.length)-1;
-  newPlace = words[lastWordPos];
-  
   return newPlace;
 }
 
@@ -118,30 +97,12 @@ function getLastWordInPlaceName(place) {
 function getLargerNumber(arg1, arg2) {
   let largestNumber;
 
-  //let equal;
-  
-  if (arg1 > arg2) {
-  	largestNummber = arg1;
-  } /*else if(arg2 > arg1) {
-  	largestNumber = arg2;
-  }*/ else {
-  	//lasgestNumber = null;
-  	//equal = "The numbers are equal"
-  	largestNumber = arg2;
-  }
-
-  /*if (largestNumber == null) {
-  	return equal;
-  } else {
-  	return largestNumber;
-  }*/
-  
   return largestNumber;
 }
 
 /*** A person just got married and they need their last name replaced.
  * The function accepts two arguments first agrument being the fullname of the newlywed.
- * The second argument is the new last name the newlywed will receive after being married.
+ * The second argument is the new last name the newlywed will receive after being marred.
  *
  *   ie fullname =  Emily Rose
  *    newLastName = Smith
@@ -153,15 +114,6 @@ function getLargerNumber(arg1, arg2) {
 
 function replaceLastName(fullName, newLastName) {
   let newFullName;
-
-  let words;
-  let name;
-
-  words = fullName.split(" ");
-  name = words[0];
-
-  newFullName = name.concat(" ",newLastName);
-
   return newFullName;
 }
 
@@ -173,11 +125,6 @@ function replaceLastName(fullName, newLastName) {
 function capitalizeLastName(fullName) {
   let capitalizeLastName;
 
-  let lastName;
-
-  lastName = getLastWordInPlaceName(fullName);
-  capitalizeLastName = replaceLastName(fullName, (lastName[0].toUpperCase()+lastName.slice(1)));  
-
   return capitalizeLastName;
 }
 
@@ -187,7 +134,7 @@ function capitalizeLastName(fullName) {
  *
  */
 function compareEquality(a, b) {
-  if (a === b) {
+  if (a == b) {
     // Change this line
     return 'Equal';
   }
@@ -208,7 +155,7 @@ function compareEquality(a, b) {
 
 function testStrictNotEqual(a, b) {
   // Only Change Code Below this Line
-  if (a !== b) {
+  if (undefined) {
     // Only Change Code Above this Line
 
     return 'Not Equal';
@@ -230,11 +177,6 @@ function testStrictNotEqual(a, b) {
 
 function testLogicalAnd(num) {
   // code here
-  if(num > 5 && num < 10) {
-  	return 'Yes';
-  } else {
-  	return 'No';
-  }
 }
 
 /**
@@ -248,22 +190,12 @@ function testLogicalAnd(num) {
 
 function testLogicalOr(num) {
   // code here
-  if(num == 20 || num == 25) {
-  	return 'Yes';
-  } else {
-  	return 'No';
-  }
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-  if (isEven % 2 == 0) {
-  	return true;
-  } else {
-  	return false;
-  }
-  //return isEven;
+  return isEven;
 }
 
 /****
@@ -283,15 +215,7 @@ function isEvenOrOdd(isEven) {
  * 
  *  *****/
 
-function caseInSwitch(num) {
-	let words = ['ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE','PLEASE TRY AGAIN'];
-	if(num > 0 && num < 10) {
-		return words[num-1];
-	}else {
-		return words[9];
-	}
-}
-
+function caseInSwitch(num) {}
 
 /***
  *  Create a function named timesFive
@@ -304,15 +228,6 @@ function caseInSwitch(num) {
  *   timesFive() should return 5
  *
  */
-function timesFive(num){
-	let result;
-	if(num == null){
-		num = 1;
-	}
-	result = num * 5;
-	return result;
-}
-
 
 /***
  *  create a function called lowerCaseName that will return the string lowerCased
@@ -325,20 +240,12 @@ function timesFive(num){
  *
  *
  */
-
-// Write a function here
-function lowerCaseName(name){
-	if(name == null){
-		return;
-	}
-	if(typeof name === 'string') {
-		return name.toLowerCase();
-	}
+function lowerCaseName(str) {
+  if (!str) {
+    return;
+  }
+  return str.toLowerCase();
 }
-
-/******************************************************************************************************************/
-/** Ignore below. It's for the tests. **/
-
 let myExports = {
   myName,
   setTeachersNames,
