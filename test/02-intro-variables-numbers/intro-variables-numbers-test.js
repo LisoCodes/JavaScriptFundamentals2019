@@ -48,7 +48,7 @@ describe('Intro Variables And Numbers', () => {
 
   it('should use the Javascript decrement operator to decement the age by a 1', () => {
     expect(makeMeYoungerByAYear.toString().includes('--')).equal(true);
-    expect(ageMeByAYear(18)).equal(17);
+    expect(makeMeYoungerByAYear(18)).equal(17);
   });
 
   it('should cast the string to an integer', () => {
