@@ -4,37 +4,46 @@ function myName(name) {
 
   return myName;
 }
+console.log(myName("Lee"));
 
 function setTeachersNames(teachersName) {
   // change code below this line so that we can set the variable.
-  const teachers = null;
-  teachers = teachersName; //  <- this is  invalid because teachers is a const. How can we fix this?
+  let teachers = teachersName;
+  //  <- this is  invalid because teachers is a const. How can we fix this?
 
   return teachers;
 }
+console.log(setTeachersNames("Jamal"));
 
 /*** return the sum of both arguments  ***/
 function add(a, b) {
-  let sum;
+  let sum = a + b;
 
   return sum;
 }
+console.log(add(2, 2));
 
 /*** Using the increment operator, add a year to the argument and make me older */
 function ageMeByAYear(age) {
+  age++;
   return age;
 }
+console.log(ageMeByAYear(10));
 //STOP HERE
 /*** Using the decrement operator make me age decrement by a year  ***/
 function makeMeYoungerByAYear(age) {
+  age--;
   return age;
 }
+console.log(makeMeYoungerByAYear(10));
 
 /** Take the argument that will be a string and return an integer  */
 function convertStringToInt(str) {
   let int;
+  int = parseInt(str, 25);
   return int;
 }
+console.log(convertStringToInt(45));
 
 /*** Using the String method indexOf find the first position of the letter in the name  */
 /***
@@ -47,8 +56,10 @@ function convertStringToInt(str) {
  */
 function getTheCharacterPosition(name, letter) {
   let characterPosition;
+  characterPosition = name.indexOf(letter);
   return characterPosition;
 }
+console.log(getTheCharacterPosition(James, J));
 
 /** Take the argument and return the length of the argument */
 
@@ -136,9 +147,9 @@ function capitalizeLastName(fullName) {
 function compareEquality(a, b) {
   if (a == b) {
     // Change this line
-    return 'Equal';
+    return "Equal";
   }
-  return 'Not Equal';
+  return "Not Equal";
 }
 
 /** The function should use the strict inequality operator
@@ -158,9 +169,9 @@ function testStrictNotEqual(a, b) {
   if (undefined) {
     // Only Change Code Above this Line
 
-    return 'Not Equal';
+    return "Not Equal";
   }
-  return 'Equal';
+  return "Equal";
 }
 
 /***
