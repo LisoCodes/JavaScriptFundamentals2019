@@ -1,7 +1,5 @@
 # JavaScript Fundamentals
 
-Roberto
-
 **[AlbanyCanCode Course](https://albanycancode.org/)**
 
 **Fall 2019**

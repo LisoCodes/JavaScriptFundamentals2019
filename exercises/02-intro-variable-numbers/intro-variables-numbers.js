@@ -176,7 +176,7 @@ function testStrictNotEqual(a, b) {
 
 /***
  *  Refactor the code down below to use the logical && operator.
- *  The should return "Yes" when it is 6, 7, 8 and 9.
+ *  This should return "Yes" when it is 6, 7, 8 and 9.
  *  ```javascript
  *  testLogicalAnd(9); // should return "Yes"
  *  testLogicalAnd(6); // should return "Yes"
@@ -188,6 +188,12 @@ function testStrictNotEqual(a, b) {
 
 function testLogicalAnd(num) {
   // code here
+  if (num <= 6 && num <= 9) {
+    return 'Yes';
+  } else if (num === 10) {
+    return 'No';
+  }
+  return 'No';
 }
 
 /**
@@ -226,7 +232,31 @@ function isEvenOrOdd(isEven) {
  * 
  *  *****/
 
-function caseInSwitch(num) {}
+function caseInSwitch(num) {
+  console.log(num);
+  switch (num) {
+    case 1:
+      return 'ONE'; //assuming break not needed since we are executing return but test not working so...
+    case 2:
+      return 'TWO';
+    case 3:
+      return 'THREE';
+    case 4:
+      return 'FOUR';
+    case 5:
+      return 'FIVE';
+    case 6:
+      return 'SIX';
+    case 7:
+      return 'SEVEN';
+    case 8:
+      return 'EIGHT';
+    case 9:
+      return 'NINE';
+    default:
+      return 'PLEASE TRY AGAIN';
+  }
+}
 
 /***
  *  Create a function named timesFive
@@ -251,12 +281,8 @@ function caseInSwitch(num) {}
  *
  *
  */
-function lowerCaseName(str) {
-  if (!str) {
-    return;
-  }
-  return str.toLowerCase();
-}
+function lowerCaseName(str) {}
+
 let myExports = {
   myName,
   setTeachersNames,

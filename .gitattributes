@@ -46,18 +46,24 @@
 .gitignore text
 .gitconfig text
 
+# package management config
+package.json text
+package-lock.json text
+yarn.lock text
+
 # code analysis config
-.eslintrc
-.eslintrc.json
+.eslintrc text
 
 # misc config
 *.yaml text
 *.yml text
 .editorconfig text
-.quokka
+.quokka text
 
 # build config
-.babelrc
+.nvmrc text
+.babelrc text
+.browserslistrc text
 
 # Heroku
 Procfile text
@@ -78,6 +84,7 @@ AUTHORS text
 
 # (binary is a macro for -text -diff)
 *.png binary
+*.jpg binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
