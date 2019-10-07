@@ -146,7 +146,7 @@ function capitalizeLastName(fullName) {
  */
 function compareEquality(a, b) {
   if (a == b) {
-    // Change this line
+    let (a == b)
     return "Equal";
   }
   return "Not Equal";

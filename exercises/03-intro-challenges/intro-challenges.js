@@ -8,7 +8,10 @@
  * countNumberOfDigits(123); // 3
  * countNumberOfDigits(1000); // 4
  */
-function countNumberOfDigits(num) {}
+function countNumberOfDigits(num) {
+  let countNumberOfDigits: num = 123;
+}
+console.log(countNumberOfDigits(num));
 
 /**
  * Given a number of seconds, return how long ago something happened.
@@ -24,7 +27,13 @@ function countNumberOfDigits(num) {}
  * getRelativeTime(59); // seconds ago
  * getRelativeTime(60); // minutes ago
  */
-function getRelativeTime(seconds) {}
+function getRelativeTime(seconds) {
+  var mind = time % (60 * 60);
+  var minutes = Math.floor(mind / 60);
+
+  var secd = mind % 60;
+  var seconds = Math.ceil(secd);
+}
 
 /**
  * Round to the nearest 100th decimal point.
@@ -35,7 +44,11 @@ function getRelativeTime(seconds) {}
  * roundToNearestHundredth(14.511); // 14.51
  * roundToNearestHundredth(14.499); // 14.5
  */
-function roundToNearestHundredth(num) {}
+function roundToNearestHundredth(num) {
+  function round (a , b) 
+    return round (a , b);
+
+}
 
 // Ignore this. It is for the tests.
 module.exports = {
