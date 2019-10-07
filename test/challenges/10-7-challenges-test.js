@@ -22,7 +22,7 @@ describe.only("challenges/10-7-challenges/10-7-challenges.js", () => {
     expect(graduateObject).to.eql({
       name: "Jane Doe",
       graduationYear: 2019,
-      skills: ["JavaScript", "React", "CSS"],
+      skills: ["JavaScript", "HTML", "CSS"],
       links: {
         github: "https://github.com/example/profile",
         linkedIn: "https://linkedin.com/profile"
