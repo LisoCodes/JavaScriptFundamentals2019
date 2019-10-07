@@ -254,17 +254,19 @@ Thumbs.db
 
 # workspace
 .project
-.vscode/*
-!/.vscode/launch.json
 **/.vscode/*
 !**/.vscode/launch.json
 *.code*
 .idea
 .sublime*
+*.swp
 
 # to avoid merge conflicts
 package-lock.json
 yarn.lock
+
+# generated from exercises / challenges
+challenges/10-7-challenges/people-output.csv
 
 # misc
 *NOCOMMIT*
