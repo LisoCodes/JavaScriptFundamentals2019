@@ -15,7 +15,7 @@ describe.only("challenges/10-7-challenges/10-7-challenges.js", () => {
     const graduateObject = createGraduateObject(
       "Jane Doe",
       2019,
-      { 1: "Javascript", 2: "HTML", 3: "CSS" },
+      { 1: "JavaScript", 2: "HTML", 3: "CSS" },
       ["https://github.com/example/profile", "https://linkedin.com/profile"]
     );
 
