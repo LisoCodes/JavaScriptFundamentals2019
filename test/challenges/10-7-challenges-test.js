@@ -10,7 +10,7 @@ const {
   createGraduateObject
 } = require("../../challenges/10-7-challenges/10-7-challenges");
 
-describe.only("challenges/10-7-challenges/10-7-challenges.js", () => {
+describe("challenges/10-7-challenges/10-7-challenges.js", () => {
   it("should return a student graduate object with the correct format", () => {
     const graduateObject = createGraduateObject(
       "Jane Doe",
