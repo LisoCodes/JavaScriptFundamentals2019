@@ -49,9 +49,9 @@ describe("groceryList", () => {
     groceryListObj.add("pears");
     groceryListObj.add("orange");
     groceryListObj.add("apples");
-    groceryListObj.removeItem(2);
-    console.log(groceryListObj.getGroceryList());
-    expect(groceryListObj.getGroceryList().length).to.equal(2);
+    groceryListObj.remove(2);
+    console.log(groceryListObj.getList());
+    expect(groceryListObj.getList().length).to.equal(2);
   });
 });
 
